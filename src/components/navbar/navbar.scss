@@ -1,5 +1,6 @@
 .navbar {
   height: 100px;
+
   .wrapper {
     max-width: 1366px;
     margin: auto;
@@ -8,7 +9,7 @@
     justify-content: space-between;
     height: 100px;
 
-    span {
+    a {
       font-weight: bold;
     }
 
