@@ -24,6 +24,29 @@ const textVariants = {
   },
 };
 
+const imageVariants = {
+  initial: {
+    x: 500,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+  scrollButton: {
+    opacity: 0,
+    y: 10,
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+    },
+  },
+};
+
 const sliderVariants = {
   initial: {
     x: 0,
@@ -85,9 +108,14 @@ const Hero = () => {
         WEB DEVELOPER PHOTOGRAPHER TOUR GUIDE
       </motion.div>
       {/* IMAGE FOR THE HERO SECTION  */}
-      <div className="imageContainer">
+      <motion.div
+        className="imageContainer"
+        variants={imageVariants}
+        initial="initial"
+        animate="animate"
+      >
         <img src="https://i.ibb.co/Jj94xvp/Hssn.png" alt="HeroSection" />
-      </div>
+      </motion.div>
     </div>
   );
 };
