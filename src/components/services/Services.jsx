@@ -39,7 +39,7 @@ const Services = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="public/people.webp" alt="" />
+          <img src="https://i.ibb.co/w7Cc8dY/people.webp" alt="people" />
           <h1>
             <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
           </h1>
@@ -58,56 +58,43 @@ const Services = () => {
           whileHover={{ background: "lightgray", color: "black" }}
           className="box"
         >
-          <h2>Branding</h2>
+          <h2>Concept To Creation</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quod
-            exercitationem velit, tenetur fuga corporis necessitatibus officiis
-            perspiciatis reprehenderit ex iusto accusantium omnis aperiam enim
-            non at minus est cum.
+            I take your ideas and concepts and turn them into fully functional,
+            beautifully designed websites. Whether it&apos;s a sleek portfolio,
+            an e-commerce platform, or a custom web application, I&apos;ve got
+            you covered.
           </p>
-          <button>GO</button>
+          <a href="#contact">
+            {/* <button>GO</button> */}
+            GO
+          </a>
         </motion.div>
 
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
           className="box"
         >
-          <h2>Branding</h2>
+          <h2>Technical Expertise</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quod
-            exercitationem velit, tenetur fuga corporis necessitatibus officiis
-            perspiciatis reprehenderit ex iusto accusantium omnis aperiam enim
-            non at minus est cum.
+            From HTML and CSS to JavaScript, React, Node.js, and databases, I
+            deeply understand the technologies that power modern web
+            applications. I ensure that your site is fast, secure, and reliable.
           </p>
-          <button>GO</button>
+          <a href="#contact">GO</a>
         </motion.div>
 
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
           className="box"
         >
-          <h2>Branding</h2>
+          <h2>Responsive And Mobile-Friendly</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quod
-            exercitationem velit, tenetur fuga corporis necessitatibus officiis
-            perspiciatis reprehenderit ex iusto accusantium omnis aperiam enim
-            non at minus est cum.
+            Your website will look great on all devices, from desktop computers
+            to smartphones and tablets. I prioritize responsive design to reach
+            your audience wherever they are.
           </p>
-          <button>GO</button>
-        </motion.div>
-
-        <motion.div
-          whileHover={{ background: "lightgray", color: "black" }}
-          className="box"
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quod
-            exercitationem velit, tenetur fuga corporis necessitatibus officiis
-            perspiciatis reprehenderit ex iusto accusantium omnis aperiam enim
-            non at minus est cum.
-          </p>
-          <button>GO</button>
+          <a href="#contact">GO</a>
         </motion.div>
       </motion.div>
     </motion.div>

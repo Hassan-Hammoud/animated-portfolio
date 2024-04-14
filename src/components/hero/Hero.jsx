@@ -92,7 +92,7 @@ const Hero = () => {
           <motion.img
             variants={textVariants}
             animate="scrollButton"
-            src="/scroll.png"
+            src="https://i.ibb.co/BKXK3QW/scroll.png"
             alt="scrollButton"
             whileHover={{ cursor: "pointer" }}
           />
@@ -115,6 +115,7 @@ const Hero = () => {
         animate="animate"
       >
         <img src="https://i.ibb.co/Jj94xvp/Hssn.png" alt="HeroSection" />
+        {/* <img src="/public/hssn.png" alt="HeroSection" /> */}
       </motion.div>
     </div>
   );

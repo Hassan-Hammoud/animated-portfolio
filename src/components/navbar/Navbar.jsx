@@ -1,6 +1,10 @@
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaSquareGithub } from "react-icons/fa6";
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -12,24 +16,31 @@ const Navbar = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
+          className="logoName"
         >
           HASSAN TECH
         </motion.a>
         <div className="social">
           <a href="https://www.facebook.com/hassan.hammoud.7127/">
-            <img src="/facebook.png" alt="" />
+            <FaSquareFacebook style={{ color: "#4267B2" }} />
           </a>
 
           <a href="https://www.instagram.com/hssn_3ha/">
-            <img src="/instagram.png" alt="" />
+            <FaInstagram
+              style={{
+                background:
+                  "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
+                borderRadius: "6px",
+              }}
+            />
           </a>
 
           <a href="https://github.com/Hassan-Hammoud">
-            <img src="/dribble.png" alt="" />
+            <FaSquareGithub style={{ color: "#8c8ca3" }} />
           </a>
 
           <a href="https://www.linkedin.com/in/hassan-hammoud-3ha/">
-            <img src="/youtube.png" alt="" />
+            <FaLinkedin style={{ color: "#0077B5" }} />
           </a>
         </div>
       </div>
