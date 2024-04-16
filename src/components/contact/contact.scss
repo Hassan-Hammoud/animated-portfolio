@@ -58,8 +58,9 @@
 
       svg {
         @include mobile {
-          width: 250px;
-          height: 250px;
+          width: 280px;
+          height: 280px;
+          margin-left: -20px;
         }
       }
     }

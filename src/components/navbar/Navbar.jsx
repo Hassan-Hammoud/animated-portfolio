@@ -21,6 +21,14 @@ const Navbar = () => {
           HASSAN TECH
         </motion.a>
         <div className="social">
+          <a href="https://www.linkedin.com/in/hassan-hammoud-3ha/">
+            <FaLinkedin style={{ color: "#0077B5" }} />
+          </a>
+
+          <a href="https://github.com/Hassan-Hammoud">
+            <FaSquareGithub style={{ color: "#8c8ca3" }} />
+          </a>
+
           <a href="https://www.facebook.com/hassan.hammoud.7127/">
             <FaSquareFacebook style={{ color: "#4267B2" }} />
           </a>
@@ -33,14 +41,6 @@ const Navbar = () => {
                 borderRadius: "6px",
               }}
             />
-          </a>
-
-          <a href="https://github.com/Hassan-Hammoud">
-            <FaSquareGithub style={{ color: "#8c8ca3" }} />
-          </a>
-
-          <a href="https://www.linkedin.com/in/hassan-hammoud-3ha/">
-            <FaLinkedin style={{ color: "#0077B5" }} />
           </a>
         </div>
       </div>

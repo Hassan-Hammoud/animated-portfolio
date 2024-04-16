@@ -21,28 +21,21 @@
 
     p {
       font-weight: 200;
-      font-size: 25px;
-      text-align: right;
+      font-size: 20px;
       color: gray;
-
-      @include mobile {
-        text-align: center;
-        font-size: 18px;
-        margin-top: 20px;
-      }
+      text-align: right;
     }
 
     hr {
       width: 500px;
       border: none;
-      border: 1px solid gray;
+      border-top: 0.5px solid gray;
 
       @include mobile {
         width: 300px;
       }
     }
   }
-
   .titleContainer {
     flex: 2;
     display: flex;
@@ -55,13 +48,13 @@
 
     .title {
       display: flex;
-      gap: 20px;
       align-items: center;
+      gap: 50px;
 
       @include mobile {
         flex-direction: column;
         text-align: center;
-        gap: 10px;
+        gap: 20px;
       }
 
       img {
@@ -71,7 +64,8 @@
         object-fit: cover;
 
         @include mobile {
-          display: none;
+          width: 200px;
+          height: 50px;
         }
       }
 
@@ -80,84 +74,71 @@
         font-weight: 100;
 
         @include mobile {
-          font-size: 30px;
-          margin-top: 10px;
-        }
-
-        b {
-          transition: all 0.5s;
+          font-size: 36px;
         }
       }
 
       button {
         width: 300px;
         height: 100px;
+        border-radius: 50px;
         background-color: orange;
         border: none;
-        border-radius: 50px;
         font-size: 24px;
         cursor: pointer;
 
         @include mobile {
+          font-size: 16px;
           width: 150px;
           height: 50px;
-          font-size: 16px;
         }
       }
     }
   }
-
   .listContainer {
-    padding-bottom: 60px;
     flex: 2;
     display: flex;
     max-width: 1366px;
     margin: auto;
-    height: 100%;
 
     @include mobile {
       flex-direction: column;
       width: 100%;
     }
+
     .box {
       padding: 50px;
       border: 0.5px solid gray;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: all 0.5s;
+
+      @include mobile {
+        border: none;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+      }
 
       p {
         @include mobile {
-          font-size: 15px;
-          margin: 0;
+          display: none;
         }
       }
-      @include mobile {
-        border: none;
-        padding: 10px;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-      }
 
-      a {
+      button {
         padding: 10px;
         background-color: orange;
         border: none;
         cursor: pointer;
-        font-weight: 600;
-        border-radius: 3px;
-        text-align: center;
-        color: #000;
 
         @include mobile {
-          width: 50%;
-          border-radius: 6px;
-          border: 1px solid orange;
-          color: orange;
           background-color: transparent;
-          padding: 5px30;
+          border: 1px solid orange;
+          border-radius: 5px;
+          color: orange;
+          width: 50%;
+          padding: 5px;
         }
       }
     }

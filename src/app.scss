@@ -32,6 +32,12 @@ section {
     height: 50vh;
   }
 }
+
+.servicesSection {
+  @media (max-width: 738px) {
+    height: 130vh;
+  }
+}
 // Responsive Mobile
 
 @mixin mobile {
