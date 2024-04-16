@@ -25,6 +25,13 @@ section {
   scroll-snap-align: center;
 }
 
+.aboutSection {
+  height: 35vh;
+
+  @media (max-width: 738px) {
+    height: 50vh;
+  }
+}
 // Responsive Mobile
 
 @mixin mobile {

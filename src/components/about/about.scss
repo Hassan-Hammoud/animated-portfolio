@@ -1,0 +1,87 @@
+@import "../../app.scss";
+
+.intro {
+  padding: 60px 0;
+  background-color: #f4f4f4;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    padding: 20px;
+    height: 50vh;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+    padding: 0 15px;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  .col-md-offset-2 {
+    margin-left: 16.66%;
+
+    @include mobile {
+      margin-left: 0;
+    }
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+
+    &.arrow::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background-color: rebeccapurple;
+      bottom: -10px;
+      left: 0;
+    }
+
+    span {
+      color: rebeccapurple;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+  }
+
+  .wp1 {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.6s ease-in-out forwards;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

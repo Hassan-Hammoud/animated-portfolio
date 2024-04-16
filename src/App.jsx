@@ -1,4 +1,5 @@
 import "./app.scss";
+import AboutMe from "./components/about/aboutMe";
 import Contact from "./components/contact/Contact";
 // import Cursor from "./components/cursor/Cursor";
 import Hero from "./components/hero/Hero";
@@ -13,6 +14,9 @@ const App = () => {
       <section id="homepage">
         <Navbar />
         <Hero />
+      </section>
+      <section className="aboutSection" id="about">
+        <AboutMe />
       </section>
       <section id="services">
         <Parallax type="services" />
@@ -33,4 +37,4 @@ const App = () => {
 
 export default App;
 
-// one hour and 6 minutes from the video
+// work on the tablet responsive and the content of what you did the previous project

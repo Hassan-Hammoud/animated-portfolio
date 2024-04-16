@@ -76,18 +76,22 @@ const Hero = () => {
             FULL STACK WEB DEVELOPER
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button
-              variants={textVariants}
-              whileHover={{ cursor: "pointer" }}
-            >
-              See The Latest Works
-            </motion.button>
-            <motion.button
-              variants={textVariants}
-              whileHover={{ cursor: "pointer" }}
-            >
-              Contact Me
-            </motion.button>
+            <a href="#portfolio">
+              <motion.button
+                variants={textVariants}
+                whileHover={{ cursor: "pointer" }}
+              >
+                See The Latest Works
+              </motion.button>
+            </a>
+            <a href="#contact">
+              <motion.button
+                variants={textVariants}
+                whileHover={{ cursor: "pointer" }}
+              >
+                Contact Me
+              </motion.button>
+            </a>
           </motion.div>
           <motion.img
             variants={textVariants}
