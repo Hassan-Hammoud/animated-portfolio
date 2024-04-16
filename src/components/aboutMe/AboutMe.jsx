@@ -1,4 +1,4 @@
-import "./about.scss";
+import "./aboutMe.scss";
 import { motion } from "framer-motion";
 
 const AboutMe = () => {
