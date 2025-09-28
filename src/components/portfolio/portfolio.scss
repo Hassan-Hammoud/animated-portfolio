@@ -16,10 +16,8 @@
     z-index: 1; // ? Add z-index
 
     @include mobile {
-      padding-top: calc(100vh - 90px);
+      padding-top: calc(100vh - 100px); //! Editing
       font-size: 24px;
-      //! Editing
-      // padding-top: calc(100vh - 100px);
     }
 
     .progressBar {
@@ -100,7 +98,7 @@
           @include mobile {
             //! Editing
             // font-size: 16px;
-            font-size: 12px;
+            font-size: 14px;
           }
         }
 
