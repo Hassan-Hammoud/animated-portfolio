@@ -10,7 +10,7 @@
   overflow: hidden;
   position: relative;
   @include mobile {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 55px);
   }
 
   .wrapper {

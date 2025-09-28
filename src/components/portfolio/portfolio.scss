@@ -1,4 +1,6 @@
-@import "../../app.scss";
+/** @format */
+
+@import '../../app.scss';
 
 .portfolio {
   position: relative;
@@ -11,10 +13,13 @@
     text-align: center;
     color: orange;
     font-size: 36px;
+    z-index: 1; // ? Add z-index
 
     @include mobile {
-      padding-top: calc(100vh - 100px);
+      padding-top: calc(100vh - 90px);
       font-size: 24px;
+      //! Editing
+      // padding-top: calc(100vh - 100px);
     }
 
     .progressBar {
@@ -67,6 +72,7 @@
       }
 
       .textContainer {
+        z-index: 2; // ? Add z-index
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -92,7 +98,9 @@
           font-size: 20px;
 
           @include mobile {
-            font-size: 16px;
+            //! Editing
+            // font-size: 16px;
+            font-size: 12px;
           }
         }
 
